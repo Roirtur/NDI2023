@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 
 @Component({
@@ -9,6 +12,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     RouterOutlet,
+    RouterModule,
+    NavbarComponent,
+    FooterComponent,
     HomeComponent
   ],
   templateUrl: './app.component.html',
