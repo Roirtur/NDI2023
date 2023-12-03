@@ -13,6 +13,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build --configuration=production --base-href https://roirtur.github.io/NDI2023/` to build the project. The build artifacts will be stored in the `dist/` directory.
+
 Run `ngh --dir dist/browser` to upload the site one the href `https://roirtur.github.io/NDI2023/` (You need to wait a bit before the update is done)
 
 ## Running unit tests
