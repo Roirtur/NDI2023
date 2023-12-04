@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  veryImportantFunction() {
+    var audio = new Audio('../../assets/gragas.ogg');
+    audio.play();
+  }
 
 }
