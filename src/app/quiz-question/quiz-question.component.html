@@ -1,1 +1,7 @@
-<p>quiz-question works!</p>
+<h2>{{ question.title }}</h2>
+
+<div *ngFor="let answer of question.answers" class="questionsBlock">
+    <button>
+        {{answer}}
+    </button>
+</div>

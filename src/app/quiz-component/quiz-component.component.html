@@ -1,1 +1,8 @@
-<p>quiz-component works!</p>
+<div class="quizz-page" >
+    <h2>Question {{this.currentQuestion.id}} / {{this.totalNumberOfQuestions}}</h2> 
+  <app-quiz-question [question]="currentQuestion"></app-quiz-question>
+    
+    <button class="buttonPrev" *ngIf="this.currentQuestion.id > 1" (click)="onPrev()"> <span>Prev</span></button>
+    <button class="buttonNext" *ngIf="this.currentQuestion.id < totalNumberOfQuestions" (click)="onNext()"><span>Next</span></button>
+</div>
+
