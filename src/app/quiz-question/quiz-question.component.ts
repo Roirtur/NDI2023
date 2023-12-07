@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-
-@Component({
+import { Component, Input } from '@angular/core';
+import { Question } from '../models/question.models';
+import {QuizQuestions} from '../services/qizz-question-service'
+ @Component({
   selector: 'app-quiz-question',
   standalone: true,
   imports: [],
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './quiz-question.component.css'
 })
 export class QuizQuestionComponent {
+  constructor(private quizQuestionService: QuizQuestions){}
 
+  @Input() question !: Question;
 }
