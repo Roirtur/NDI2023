@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BibliographieComponent } from './bibliographie/bibliographie.component';
 import { DebunkPageComponent } from './debunk-page/debunk-page.component';
+import { CharlieComponent } from './charlie/charlie.component';
 
 const routeConfig: Routes = [
    
@@ -26,6 +27,11 @@ const routeConfig: Routes = [
       path: '',
       component: HomeComponent,
       title: 'Home page'
+    },
+    {
+      path: 'charliehiddenyoucantfindthelinkhahahahah',
+      component: CharlieComponent,
+      title: 'Où est Charlie?'
     },
     {
       path: '**',
