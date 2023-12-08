@@ -139,9 +139,11 @@
 .c-title-3 {
     top: 60px;
     left: 20px;
+    cursor: default;
 }
 .c-title-3:hover {
     color: #a2caa1;
+    
 }
 
 .classic-navigation-buttons {

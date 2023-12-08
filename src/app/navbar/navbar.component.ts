@@ -17,19 +17,18 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
 
     jQuery('.classic-navigation').fadeOut(0);
+    jQuery('.navigation-corner,.navigation-title').css({
+      'display' : 'none',
+    });
 
-    const scrollPos = jQuery(document).scrollTop() || 0;
-    if (scrollPos < (jQuery('.navigation-container').height() || 0) + 300 && scrollPos != 0) {
-      jQuery('.navigation-corner,.navigation-title').css({
-        'margin-left' : - scrollPos*2 + "px",
-      });
-      jQuery('.navigation-buttons').css({
-        'margin-top' : - scrollPos + "px",
-      });
-      jQuery('.navigation-corner,.navigation-title').css({
-        'display' : 'none',
-      });
-    } 
+    jQuery(document).ready(function(){
+
+      const scrollPos = jQuery(document).scrollTop() || 0;
+      if (scrollPos == 0) {
+        jQuery('.navigation-corner,.navigation-title').css({
+          'display' : 'none',
+        });
+      }
   
     jQuery(document).on('scroll', function(){
       const scrollPos = jQuery(this).scrollTop() || 0;
@@ -63,6 +62,7 @@ export class NavbarComponent implements OnInit {
         });
       }
     });  
+  });
 
   }
 }
