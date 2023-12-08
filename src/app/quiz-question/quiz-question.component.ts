@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Question } from '../models/question.models';
-import {QuizQuestions} from '../services/qizz-question-service'
 import { CommonModule } from '@angular/common';
  @Component({
   selector: 'app-quiz-question',
@@ -10,9 +9,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './quiz-question.component.css'
 })
 export class QuizQuestionComponent {
-  constructor(private quizQuestionService: QuizQuestions){}
 
   @Input() question !: Question;
 
+  isAnswerCorrect(newAnswer: any): boolean {
+    if(!newAnswer)
+      return false;
+    else{
+      this.question.choosedAnswer = newAnswer.toString();
+    }
+    return newAnswer.toString() === this.question.correctAnswer.toString();
+  }
 
 }

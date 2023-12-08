@@ -1,20 +1,23 @@
 <div class="pt-10">
   <h2 class="text-2xl font-bold">{{ question.title }}</h2>
 
-  <div class="flex flex-wrap justify-center">
-    <div class="w-full md:w-1/2 p-3">
-      <div class="bg-white border rounded shadow p-2">
-        <div class="flex flex-row items-center">
-          <div
-            *ngFor="let answer of question.answers"
-            class="questionsBlock w-1/2"
-          >
-            <button>
-              {{ answer }}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div *ngFor="let answer of question.answers" class="questionsBlock">
+    <button
+      (click)="isAnswerCorrect(answer)"
+      [disabled]="question.choosedAnswer"
+    >
+      <span
+        [ngStyle]="{
+          color:
+            question.choosedAnswer === answer
+              ? isAnswerCorrect(question.choosedAnswer)
+                ? 'green'
+                : 'red'
+              : ''
+        }"
+      >
+        {{ answer }}
+      </span>
+    </button>
   </div>
 </div>

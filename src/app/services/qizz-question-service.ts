@@ -17,6 +17,7 @@ export class QuizQuestions {
             title: "L'écologie c'est mal",
             answers: ["oui", "non"],
             correctAnswer: "oui",
+            choosedAnswer: "",
 
         },
         {
@@ -24,12 +25,14 @@ export class QuizQuestions {
             title: "Le CO2 c'est bon pour la santé",
             answers: ["je crois pas ", "oui"],
             correctAnswer: "oui",
+            choosedAnswer: "",
         },
         {
             id: 3,
             title: "De combien de degré la température moyenne ne doit-elle pas augmenter ? ",
             answers: ["3", "2", "103"],
             correctAnswer: "2",
+            choosedAnswer: "",
         },
     ]
 
@@ -40,6 +43,7 @@ export class QuizQuestions {
             title: "L'écologie c'est mal",
             answers: ["oui", "non"],
             correctAnswer: "oui",
+            choosedAnswer: "",
 
         },
         {
@@ -47,12 +51,14 @@ export class QuizQuestions {
             title: "Le CO2 c'est bon pour la santé",
             answers: ["je crois pas ", "oui"],
             correctAnswer: "oui",
+            choosedAnswer: "",
         },
         {
             id: 3,
             title: "De combien de degré la température moyenne ne doit-elle pas augmenter ? ",
             answers: ["3", "2", "103"],
             correctAnswer: "2",
+            choosedAnswer: "",
         },
 
     ]
