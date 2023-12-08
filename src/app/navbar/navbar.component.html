@@ -33,7 +33,7 @@
   <div class="navigation-title title-2">Green</div>
   <div class="navigation-title title-3">Gragas</div>
   <a class="navigation-buttons button-one"   routerLink=""
-  routerLinkActive="active"> Accueil </a>
+  routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> Accueil </a>
   <a class="navigation-buttons button-two"  routerLink="debunk"
   routerLinkActive="active"> Débunk </a>
   <a class="navigation-buttons button-three" routerLink="bibliographie"
@@ -49,8 +49,9 @@
     </div>
     <a
       routerLink=""
+      [routerLinkActiveOptions]="{ exact: true }"
       routerLinkActive="active"
-      class="classic-navigation-buttons c-btn-1"
+      class="classic-navigation-buttons c-btn-1" 
     >
       Accueil
     </a>
