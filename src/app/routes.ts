@@ -14,7 +14,7 @@ const routeConfig: Routes = [
     },
     {
       path: 'debunk',
-      component: AboutComponent,
+      component: DebunkPageComponent,
       title: 'Debunk page'
     },
     {
