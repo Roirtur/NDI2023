@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
       const scrollPos = jQuery(document).scrollTop() || 0;
       if (scrollPos == 0) {
         jQuery('.navigation-corner,.navigation-title').css({
-          'display' : 'none',
+          'display' : 'flex',
         });
       }
   
