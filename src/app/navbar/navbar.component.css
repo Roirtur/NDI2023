@@ -1,0 +1,167 @@
+.navigation-container {
+    height: 1035px;
+    overflow: hidden;
+    background-color: grey;
+}
+
+.navigation-background {
+    width: 100%;
+    height: 1035px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transform: scaleX(-1);
+}
+
+.navigation-corner {
+    position: absolute;
+    top: 0;
+    flex-shrink: 0;
+    fill: rgb(58,77,57);
+    fill: linear-gradient(-10deg, rgba(58,77,57,1) 0%, rgba(115,144,114,1) 35%, rgba(236,227,206,1) 100%);
+}
+
+.navigation-title {
+    position: absolute;
+    color: #ECE3CE;
+    font-family: Inter;
+    font-size: 78px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    flex-shrink: 0;
+    letter-spacing: 2px;
+}
+
+.title-1 {
+    top: 300px;
+    left:150px;
+}
+
+.title-2 {
+    top: 430px;
+    left:250px;
+}
+
+.title-3 {
+    top: 560px;
+    left:350px;
+}
+
+.navigation-buttons {
+    position: absolute;
+    flex-shrink: 0;
+    border-bottom: 6px solid #F2C14F;
+    color: #F2C14F;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    transition: color 0.3s;
+    text-align: center;
+    cursor: pointer;
+    width: 9rem;
+}
+
+.navigation-buttons:hover {
+    border-bottom: 6px solid #F2C14F;
+    color: #F2C14F;
+}
+
+.button-one {
+    top: 350px;
+    left: 1100px;
+}
+
+.button-two {
+    top: 550px;
+    left: 1100px;
+}
+
+.button-three {
+    top: 350px;
+    left: 1500px;
+}
+
+.button-four {
+    top: 550px;
+    left: 1500px;
+}
+
+.classic-navigation {
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    gap: 200px;
+    display: flex;
+}
+
+.classic-logo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 45px;
+    top: 15px;
+}
+
+.classic-navigation-title {
+    position: absolute;
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.c-title-1 {
+    top: 0;
+    left: -20px;
+}
+.c-title-1:hover {
+    color: #3A4D39;
+}
+.c-title-2 {
+    top: 30px;
+    left: 0;
+}
+.c-title-2:hover {
+    color: #6a8a69;
+}
+.c-title-3 {
+    top: 60px;
+    left: 20px;
+}
+.c-title-3:hover {
+    color: #a2caa1;
+}
+
+.classic-navigation-buttons {
+    flex-shrink: 0;
+    padding: 6px;
+    border-bottom: 3px solid #000;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    transition: color 0.3s;
+    text-align: center;
+    cursor: pointer;
+    width: 5.5rem;
+    margin-top: 15px;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+
+.classic-navigation-buttons:hover {
+    border-bottom: 3px solid #F2C14F;
+    color: #F2C14F;
+}
