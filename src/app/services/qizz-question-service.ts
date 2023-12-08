@@ -15,14 +15,14 @@ export class QuizQuestions {
 
             id: 1,
             title: "Quelle est la limite de température à ne pas dépasser, selon le GIEC ?",
-            answers: ["1 °C", "1.5 °C", "2 °C", "2.5 °C"],
-            correctAnswer: "2 °C",
+            answers: ["+1 °C", "+1.5 °C", "+2 °C", "+2.5 °C"],
+            correctAnswer: "+2 °C",
             choosedAnswer: "",
 
         },
         {
             id: 2,
-            title: "Qui dois agir pour lutter contre le réchauffement climatique ?",
+            title: "Qui doit agir pour lutter contre le réchauffement climatique ?",
             answers: ["Les personnes aisées", "Le gouvernement", "Vous", "Tout le monde"],
             correctAnswer: "Tout le monde",
             choosedAnswer: "",
