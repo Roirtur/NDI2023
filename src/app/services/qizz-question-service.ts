@@ -55,6 +55,49 @@ export class QuizQuestions {
             correctAnswer: "Non",
             choosedAnswer: "",
         },
+        {
+            id: 7,
+            title: "Quel gaz est le plus abondant dans l'effet de serre naturel de la Terre ?",
+            answers: ["Dioxyde de carbone (CO2)", "Méthane (CH4)", "Ozone (O3)", "Vapeur d'eau (H2O)"],
+            correctAnswer: "Dioxyde de carbone (CO2)",
+            choosedAnswer: "",
+        },
+        {
+            id: 8,
+        title: "Quel secteur contribue le plus aux émissions de méthane, un gaz à effet de serre puissant ?",
+            answers: ["Agriculture", "Industrie", "Énergie", "Déchets"],
+            correctAnswer: "Agriculture",
+            choosedAnswer: "",
+        },
+        {
+            id: 9,
+            title: "Quelle est la principale cause de la déforestation mondiale ?",
+            answers: ["Exploitation minière", "Expansion urbaine", "Agriculture", "Incendies de forêt"],
+            correctAnswer: "Agriculture",
+            choosedAnswer: "",
+        },
+        {
+            id: 10,
+            title: "Quelle est la durée de vie moyenne d'un sac en plastique dans l'environnement avant de se décomposer ?",
+            answers: ["80 ans", "400 ans", "1200 ans", "Indéfini"],
+            correctAnswer: "400 ans",
+            choosedAnswer: "",
+        },
+        {
+            id: 11,
+            title: "Quel est l'impact environnemental de la production de viande comparé à la production de légumes ?",
+            answers: ["Moins d'impact", "Équivalent", "Plus d'impact", "Aucun impact"],
+            correctAnswer: "Plus d'impact",
+            choosedAnswer: "",
+        },
+        {
+            id: 12,
+            title: "Quel est le principal avantage des énergies renouvelables par rapport aux combustibles fossiles en termes d'émissions de gaz à effet de serre ?",
+            answers: ["Aucune émission", "Émissions plus élevées", "Émissions équivalentes", "Émissions moins élevées"],
+            correctAnswer: "Émissions moins élevées",
+            choosedAnswer: "",
+        }
+        
             
     ]
 

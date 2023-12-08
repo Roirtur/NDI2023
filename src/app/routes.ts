@@ -5,15 +5,16 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 
 
 const routeConfig: Routes = [
-    {
-      path: '',
-      component: HomeComponent,
-      title: 'Home page'
-    },
+   
     {
       path: 'about',
       component: AboutComponent,
       title: 'About page'
+    },
+    {
+      path: '',
+      component: HomeComponent,
+      title: 'Home page'
     },
     {
       path: '**',
