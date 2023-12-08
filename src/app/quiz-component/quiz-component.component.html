@@ -8,20 +8,22 @@
 
       <app-quiz-question [question]="currentQuestion"></app-quiz-question>
 
-      <button
-        class="buttonPrev bg-white"
-        *ngIf="this.currentQuestion.id > 1"
-        (click)="onPrev()"
-      >
-        <span>Prev</span>
-      </button>
-      <button
-        class="buttonNext bg-white"
-        *ngIf="this.currentQuestion.id < totalNumberOfQuestions"
-        (click)="onNext()"
-      >
-        <span>Next</span>
-      </button>
+      <div class="question-nav-buttons">
+        <button
+          class="bg-white"
+          *ngIf="this.currentQuestion.id > 1"
+          (click)="onPrev()"
+        >
+          <span>Précédent</span>
+        </button>
+        <button
+          class="bg-white"
+          *ngIf="this.currentQuestion.id < totalNumberOfQuestions"
+          (click)="onNext()"
+        >
+          <span>Suivant</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>

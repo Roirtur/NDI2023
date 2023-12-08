@@ -21,13 +21,11 @@ export class QuizComponentComponent {
   constructor(private quizQuestions: QuizQuestions){}
   questions: Question[] = []
   ngOnInit() {
-    console.log(this.quizIndex)
     if(this.quizIndex=== 0){
       this.questions = this.quizQuestions.getFirstQuestionsArray();
     }
   
     this.currentQuestion = this.questions[this.indexQuestion];
-    console.log(this.currentQuestion)
     this.totalNumberOfQuestions = this.questions.length;
 
   }

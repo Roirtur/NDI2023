@@ -19,7 +19,6 @@ export class NavbarComponent implements OnInit {
     jQuery('.classic-navigation').fadeOut(0);
 
     const scrollPos = jQuery(document).scrollTop() || 0;
-    console.log((scrollPos < (jQuery('.navigation-container').height() || 0) + 300));
     if (scrollPos < (jQuery('.navigation-container').height() || 0) + 300 && scrollPos != 0) {
       jQuery('.navigation-corner,.navigation-title').css({
         'margin-left' : - scrollPos*2 + "px",
