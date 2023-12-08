@@ -167,3 +167,8 @@
     border-bottom: 3px solid #F2C14F;
     color: #F2C14F;
 }
+
+.active{
+    color: #F2C14F;
+    border-color:#F2C14F;
+}
