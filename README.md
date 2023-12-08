@@ -1,5 +1,10 @@
 # NDI2023
 
+Projet réalisé par le groupe 404 Gragas Not Found, équipe de 5,5 membres. Le site réponds au défi national, et rapidement, à deux des défis sélectionnés. Nous n'avons pas eu le temps pour les autres.
+
+L'URL est le suivant : [URL](https://roirtur.github.io/NDI2023/).
+Le site est en français, est réalisé grâce au Framework JS Angular, au Framework CSS Tailwind, ainsi qu'à quelques librairies JS. Il contient quelques Easters Eggs et réponds aux demandes du sujet national.
+
 TUTORIEL [ICI](https://statuesque-petroleum-a18.notion.site/NDI-2023-82c616a10abd4b778baf936d616971f5)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
