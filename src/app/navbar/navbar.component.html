@@ -1,59 +1,100 @@
 <div class="navigation-container">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1849" viewBox="0 0 1440 1849" fill="none" class="navigation-corner">
-      <path d="M0 0H380L1440 1849H0V0Z" fill="#3A4D39"/>
-      <path d="M0 0H380L1440 1849H0V0Z" fill="url(#paint0_linear_12_7)" fill-opacity="0.2"/>
-      <defs>
-        <linearGradient id="paint0_linear_12_7" x1="720" y1="-1.23423e-06" x2="720" y2="1849" gradientUnits="userSpaceOnUse">
-          <stop/>
-          <stop offset="0.25" stop-color="#2DA647"/>
-          <stop offset="0.963542" stop-color="#41FF6B"/>
-        </linearGradient>
-      </defs>
-    </svg>
-    <div class="navigation-title title-1">
-      Growth
-    </div>
-    <div class="navigation-title title-2">
-      Green
-    </div>
-    <div class="navigation-title title-3">
-      Gragas
-    </div>
-    <a class="navigation-buttons button-one">
-      Page 1
-    </a>
-    <a class="navigation-buttons button-two">
-      Page 1
-    </a>
-    <a class="navigation-buttons button-three">
-      Page 1
-    </a>
-    <a class="navigation-buttons button-four">
-      Page 1
-    </a>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1440"
+    height="1849"
+    viewBox="0 0 1440 1849"
+    fill="none"
+    class="navigation-corner"
+  >
+    <path d="M0 0H380L1440 1849H0V0Z" fill="#3A4D39" />
+    <path
+      d="M0 0H380L1440 1849H0V0Z"
+      fill="url(#paint0_linear_12_7)"
+      fill-opacity="0.2"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_12_7"
+        x1="720"
+        y1="-1.23423e-06"
+        x2="720"
+        y2="1849"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset="0.25" stop-color="#2DA647" />
+        <stop offset="0.963542" stop-color="#41FF6B" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="navigation-title title-1">Growth</div>
+  <div class="navigation-title title-2">Green</div>
+  <div class="navigation-title title-3">Gragas</div>
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="navigation-buttons button-one"
+  >
+    Accueil
+  </a>
+  <a
+    routerLink="debunk"
+    routerLinkActive="active"
+    class="navigation-buttons button-two"
+  >
+    Débunkage
+  </a>
+  <a
+    routerLink="bibliography"
+    routerLinkActive="active"
+    class="navigation-buttons button-three"
+  >
+    Bibliographie
+  </a>
+  <a
+    routerLink="about"
+    routerLinkActive="active"
+    class="navigation-buttons button-four"
+  >
+    À propos
+  </a>
 
-  <div class="classic-navigation">
+  <nav class="classic-navigation">
     <div class="classic-logo">
-      <div class="classic-navigation-title c-title-1">
-        Growth
-      </div>
-      <div class="classic-navigation-title c-title-2">
-        Green
-      </div>
-      <div class="classic-navigation-title c-title-3">
-        Gragas
-      </div>
+      <div class="classic-navigation-title c-title-1">Growth</div>
+      <div class="classic-navigation-title c-title-2">Green</div>
+      <div class="classic-navigation-title c-title-3">Gragas</div>
     </div>
-    <a class="classic-navigation-buttons c-btn-1">
-      Page 1
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      class="classic-navigation-buttons c-btn-1"
+    >
+      Accueil
     </a>
-    <a class="classic-navigation-buttons c-btn-1">
-      Page 1
+    <a
+      routerLink="debunk"
+      routerLinkActive="active"
+      class="classic-navigation-buttons c-btn-1"
+    >
+      Débunkage
     </a>
-    <a class="classic-navigation-buttons c-btn-1">
-      Page 1
+    <a
+      routerLink="bibliography"
+      routerLinkActive="active"
+      class="classic-navigation-buttons c-btn-1"
+    >
+      Bibliographie
     </a>
-    <a class="classic-navigation-buttons c-btn-1">
-      Page 1
+    <a
+      routerLink="about"
+      routerLinkActive="active"
+      href=""
+      class="classic-navigation-buttons c-btn-1"
+    >
+      À propos
     </a>
+  </nav>
 </div>
