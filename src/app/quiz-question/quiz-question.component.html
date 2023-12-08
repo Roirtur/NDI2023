@@ -1,7 +1,14 @@
 <h2>{{ question.title }}</h2>
 
 <div *ngFor="let answer of question.answers" class="questionsBlock">
-    <button>
-        {{answer}}
+    <button (click)="isAnswerCorrect(answer)"  [disabled]="question.choosedAnswer" >
+        <span [ngStyle]="{'color': question.choosedAnswer === answer ? (isAnswerCorrect(question.choosedAnswer) ? 'green' : 'red') : ''}">
+            {{answer}}
+        </span>
     </button>
+</div>
+
+<div class="correctAnswer"*ngIf="question.choosedAnswer && !isAnswerCorrect(question.choosedAnswer)">
+    <p>Correct answer : </p>
+    {{question.correctAnswer}}
 </div>

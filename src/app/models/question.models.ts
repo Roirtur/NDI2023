@@ -4,4 +4,5 @@ export class Question {
     title!: string;
     answers!: any[];
     correctAnswer!: any;
+    choosedAnswer !: string;
 }
