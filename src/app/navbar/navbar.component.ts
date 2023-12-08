@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
