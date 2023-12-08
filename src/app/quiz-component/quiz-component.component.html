@@ -9,14 +9,14 @@
       <app-quiz-question [question]="currentQuestion"></app-quiz-question>
 
       <button
-        class="buttonPrev"
+        class="buttonPrev bg-white"
         *ngIf="this.currentQuestion.id > 1"
         (click)="onPrev()"
       >
         <span>Prev</span>
       </button>
       <button
-        class="buttonNext"
+        class="buttonNext bg-white"
         *ngIf="this.currentQuestion.id < totalNumberOfQuestions"
         (click)="onNext()"
       >

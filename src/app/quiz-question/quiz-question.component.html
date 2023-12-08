@@ -1,23 +1,48 @@
 <div class="pt-10">
   <h2 class="text-2xl font-bold">{{ question.title }}</h2>
 
-  <div *ngFor="let answer of question.answers" class="questionsBlock">
-    <button
-      (click)="isAnswerCorrect(answer)"
-      [disabled]="question.choosedAnswer"
-    >
-      <span
-        [ngStyle]="{
-          color:
-            question.choosedAnswer === answer
-              ? isAnswerCorrect(question.choosedAnswer)
-                ? 'green'
-                : 'red'
-              : ''
-        }"
+  <div class="flex flex-wrap justify-center py-10">
+    <div *ngFor="let answer of question.answers" class="w-1/2">
+      <button
+        (click)="isAnswerCorrect(answer)"
+        [disabled]="question.choosedAnswer"
+        class="text-lg font-semibold text-left w-3/4 p-8 m-2 shadow-xl shadow-gray-300 rounded-lg hover:shadow-[#3A4D39] bg-white"
       >
+        <span
+          *ngIf="
+            question.choosedAnswer === answer &&
+            isAnswerCorrect(question.choosedAnswer)
+          "
+        >
+          <span
+            class="text-white bg-green-600 border border-green-600 rounded-full px-2 py-1 mr-2"
+          >
+            <i class="fa-solid fa-check"></i>
+          </span>
+        </span>
+        <span
+          *ngIf="
+            question.choosedAnswer === answer &&
+            !isAnswerCorrect(question.choosedAnswer)
+          "
+        >
+          <span
+            class="text-white bg-red-600 border border-red-600 rounded-full px-2 py-1 mr-2"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </span>
+
         {{ answer }}
-      </span>
-    </button>
+      </button>
+    </div>
+  </div>
+
+  <div
+    class="correctAnswer"
+    *ngIf="question.choosedAnswer && !isAnswerCorrect(question.choosedAnswer)"
+  >
+    <p class="text-lg underline">Réponse correcte :</p>
+    {{ question.correctAnswer }}
   </div>
 </div>
